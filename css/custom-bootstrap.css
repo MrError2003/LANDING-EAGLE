@@ -1,0 +1,748 @@
+/* 
+ * Custom Bootstrap Colors - LANDING EAGLE
+ * Paleta personalizada manteniendo la lógica de Bootstrap
+ */
+
+:root {
+  /* ========================================
+     COLORES THEME PERSONALIZADOS (Bootstrap Standards)
+     ======================================== */
+  
+  /* Primary - Índigo oscuro */
+  --bs-primary: #30336b;
+  --bs-primary-rgb: 48, 51, 107;
+  --bs-primary-text-emphasis: #1e1f3a;
+  --bs-primary-bg-subtle: #d4d7ff;
+  --bs-primary-border-subtle: #b8bdff;
+  
+  /* Secondary - Gris oscuro */
+  --bs-secondary: #495057;
+  --bs-secondary-rgb: 73, 80, 87;
+  --bs-secondary-text-emphasis: #2e3338;
+  --bs-secondary-bg-subtle: #f4f6f7;
+  --bs-secondary-border-subtle: #dee2e6;
+  
+  /* Success - Verde azulado oscuro */
+  --bs-success: #006d68;
+  --bs-success-rgb: 0, 109, 104;
+  --bs-success-text-emphasis: #004642;
+  --bs-success-bg-subtle: #b2f0e5;
+  --bs-success-border-subtle: #7fe8db;
+  
+  /* Info - Púrpura oscuro */
+  --bs-info: #5d3fd3;
+  --bs-info-rgb: 93, 63, 211;
+  --bs-info-text-emphasis: #3a2785;
+  --bs-info-bg-subtle: #e0c3fc;
+  --bs-info-border-subtle: #c89bf9;
+  
+  /* Warning - Amarillo oscuro */
+  --bs-warning: #b8860b;
+  --bs-warning-rgb: 184, 134, 11;
+  --bs-warning-text-emphasis: #7a5707;
+  --bs-warning-bg-subtle: #fff3cd;
+  --bs-warning-border-subtle: #ffeaa7;
+  
+  /* Danger - Rojo oscuro */
+  --bs-danger: #990000;
+  --bs-danger-rgb: 153, 0, 0;
+  --bs-danger-text-emphasis: #660000;
+  --bs-danger-bg-subtle: #ffcccc;
+  --bs-danger-border-subtle: #ff9999;
+  
+  /* Light - Gris muy claro */
+  --bs-light: #f4f6f7;
+  --bs-light-rgb: 244, 246, 247;
+  --bs-light-text-emphasis: #495057;
+  --bs-light-bg-subtle: #fdfdfe;
+  --bs-light-border-subtle: #e9ecef;
+  
+  /* Dark - Gris muy oscuro */
+  --bs-dark: #212529;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-dark-text-emphasis: #495057;
+  --bs-dark-bg-subtle: #ced4da;
+  --bs-dark-border-subtle: #adb5bd;
+
+  /* ========================================
+     COLORES PERSONALIZADOS ADICIONALES
+     ======================================== */
+  
+  /* Purple variants */
+  --bs-purple: #5d3fd3;
+  --bs-purple-light: #e0c3fc;
+  --bs-purple-dark: #5d3fd3;
+  --bs-purple-rgb: 93, 63, 211;
+  
+  /* Teal variants */
+  --bs-teal: #006d68;
+  --bs-teal-light: #b2f0e5;
+  --bs-teal-dark: #006d68;
+  --bs-teal-rgb: 0, 109, 104;
+  
+  /* Amber variants */
+  --bs-amber: #bf6900;
+  --bs-amber-light: #ffe7b2;
+  --bs-amber-dark: #bf6900;
+  --bs-amber-rgb: 191, 105, 0;
+  
+  /* Pink variants */
+  --bs-pink: #b53471;
+  --bs-pink-light: #ffccd5;
+  --bs-pink-dark: #b53471;
+  --bs-pink-rgb: 181, 52, 113;
+  
+  /* Indigo variants */
+  --bs-indigo: #30336b;
+  --bs-indigo-light: #d4d7ff;
+  --bs-indigo-dark: #30336b;
+  --bs-indigo-rgb: 48, 51, 107;
+  
+  /* Magenta variants */
+  --bs-magenta: #ec008c;
+  --bs-magenta-light: #f5a6c2;
+  --bs-magenta-dark: #ec008c;
+  --bs-magenta-rgb: 236, 0, 140;
+  
+  /* Lime variants */
+  --bs-lime: #66cc00;
+  --bs-lime-light: #e6ffcc;
+  --bs-lime-dark: #66cc00;
+  --bs-lime-rgb: 102, 204, 0;
+  
+  /* Orange variants */
+  --bs-orange: #e67300;
+  --bs-orange-light: #ffd8b2;
+  --bs-orange-dark: #e67300;
+  --bs-orange-rgb: 230, 115, 0;
+  
+  /* Red dark variant */
+  --bs-red-dark: #990000;
+  --bs-red-dark-rgb: 153, 0, 0;
+}
+
+/* ========================================
+   CLASES DE UTILIDAD DE TEXTO
+   ======================================== */
+
+/* Colores theme */
+.text-primary { color: var(--bs-primary) !important; }
+.text-secondary { color: var(--bs-secondary) !important; }
+.text-success { color: var(--bs-success) !important; }
+.text-info { color: var(--bs-info-text-emphasis) !important; }
+.text-warning { color: var(--bs-warning) !important; }
+.text-danger { color: var(--bs-danger) !important; }
+.text-light { color: var(--bs-light-text-emphasis) !important; }
+.text-dark { color: var(--bs-dark) !important; }
+
+/* Colores personalizados */
+.text-purple { color: var(--bs-purple) !important; }
+.text-purple-light { color: var(--bs-purple-light) !important; }
+.text-purple-dark { color: var(--bs-purple-dark) !important; }
+.text-teal { color: var(--bs-teal) !important; }
+.text-teal-light { color: var(--bs-teal-light) !important; }
+.text-teal-dark { color: var(--bs-teal-dark) !important; }
+.text-amber { color: var(--bs-amber) !important; }
+.text-amber-light { color: var(--bs-amber-light) !important; }
+.text-amber-dark { color: var(--bs-amber-dark) !important; }
+.text-pink { color: var(--bs-pink) !important; }
+.text-pink-light { color: var(--bs-pink-light) !important; }
+.text-pink-dark { color: var(--bs-pink-dark) !important; }
+.text-indigo { color: var(--bs-indigo) !important; }
+.text-indigo-light { color: var(--bs-indigo-light) !important; }
+.text-indigo-dark { color: var(--bs-indigo-dark) !important; }
+.text-magenta { color: var(--bs-magenta) !important; }
+.text-magenta-light { color: var(--bs-magenta-light) !important; }
+.text-magenta-dark { color: var(--bs-magenta-dark) !important; }
+.text-lime { color: var(--bs-lime) !important; }
+.text-lime-light { color: var(--bs-lime-light) !important; }
+.text-lime-dark { color: var(--bs-lime-dark) !important; }
+.text-orange { color: var(--bs-orange) !important; }
+.text-orange-light { color: var(--bs-orange-light) !important; }
+.text-orange-dark { color: var(--bs-orange-dark) !important; }
+.text-red-dark { color: var(--bs-red-dark) !important; }
+
+/* ========================================
+   CLASES DE UTILIDAD DE FONDO
+   ======================================== */
+
+/* Colores theme */
+.bg-primary { background-color: var(--bs-primary) !important; }
+.bg-secondary { background-color: var(--bs-secondary) !important; }
+.bg-success { background-color: var(--bs-success) !important; }
+.bg-info { background-color: var(--bs-info) !important; }
+.bg-warning { background-color: var(--bs-warning) !important; }
+.bg-danger { background-color: var(--bs-danger) !important; }
+.bg-light { background-color: var(--bs-light) !important; }
+.bg-dark { background-color: var(--bs-dark) !important; }
+
+/* Fondos sutiles */
+.bg-primary-subtle { background-color: var(--bs-primary-bg-subtle) !important; }
+.bg-secondary-subtle { background-color: var(--bs-secondary-bg-subtle) !important; }
+.bg-success-subtle { background-color: var(--bs-success-bg-subtle) !important; }
+.bg-info-subtle { background-color: var(--bs-info-bg-subtle) !important; }
+.bg-warning-subtle { background-color: var(--bs-warning-bg-subtle) !important; }
+.bg-danger-subtle { background-color: var(--bs-danger-bg-subtle) !important; }
+
+/* Colores personalizados */
+.bg-purple { background-color: var(--bs-purple) !important; }
+.bg-purple-light { background-color: var(--bs-purple-light) !important; }
+.bg-purple-dark { background-color: var(--bs-purple-dark) !important; }
+.bg-teal { background-color: var(--bs-teal) !important; }
+.bg-teal-light { background-color: var(--bs-teal-light) !important; }
+.bg-teal-dark { background-color: var(--bs-teal-dark) !important; }
+.bg-amber { background-color: var(--bs-amber) !important; }
+.bg-amber-light { background-color: var(--bs-amber-light) !important; }
+.bg-amber-dark { background-color: var(--bs-amber-dark) !important; }
+.bg-pink { background-color: var(--bs-pink) !important; }
+.bg-pink-light { background-color: var(--bs-pink-light) !important; }
+.bg-pink-dark { background-color: var(--bs-pink-dark) !important; }
+.bg-indigo { background-color: var(--bs-indigo) !important; }
+.bg-indigo-light { background-color: var(--bs-indigo-light) !important; }
+.bg-indigo-dark { background-color: var(--bs-indigo-dark) !important; }
+.bg-magenta { background-color: var(--bs-magenta) !important; }
+.bg-magenta-light { background-color: var(--bs-magenta-light) !important; }
+.bg-magenta-dark { background-color: var(--bs-magenta-dark) !important; }
+.bg-lime { background-color: var(--bs-lime) !important; }
+.bg-lime-light { background-color: var(--bs-lime-light) !important; }
+.bg-lime-dark { background-color: var(--bs-lime-dark) !important; }
+.bg-orange { background-color: var(--bs-orange) !important; }
+.bg-orange-light { background-color: var(--bs-orange-light) !important; }
+.bg-orange-dark { background-color: var(--bs-orange-dark) !important; }
+.bg-red-dark { background-color: var(--bs-red-dark) !important; }
+
+/* ========================================
+   CLASES DE UTILIDAD DE BORDE
+   ======================================== */
+
+/* Colores theme */
+.border-primary { border-color: var(--bs-primary) !important; }
+.border-secondary { border-color: var(--bs-secondary) !important; }
+.border-success { border-color: var(--bs-success) !important; }
+.border-info { border-color: var(--bs-info-text-emphasis) !important; }
+.border-warning { border-color: var(--bs-warning) !important; }
+.border-danger { border-color: var(--bs-danger) !important; }
+.border-light { border-color: var(--bs-light) !important; }
+.border-dark { border-color: var(--bs-dark) !important; }
+
+/* Bordes sutiles */
+.border-primary-subtle { border-color: var(--bs-primary-border-subtle) !important; }
+.border-secondary-subtle { border-color: var(--bs-secondary-border-subtle) !important; }
+.border-success-subtle { border-color: var(--bs-success-border-subtle) !important; }
+.border-info-subtle { border-color: var(--bs-info-border-subtle) !important; }
+.border-warning-subtle { border-color: var(--bs-warning-border-subtle) !important; }
+.border-danger-subtle { border-color: var(--bs-danger-border-subtle) !important; }
+
+/* Colores personalizados */
+.border-purple { border-color: var(--bs-purple) !important; }
+.border-purple-light { border-color: var(--bs-purple-light) !important; }
+.border-purple-dark { border-color: var(--bs-purple-dark) !important; }
+.border-teal { border-color: var(--bs-teal) !important; }
+.border-teal-light { border-color: var(--bs-teal-light) !important; }
+.border-teal-dark { border-color: var(--bs-teal-dark) !important; }
+.border-amber { border-color: var(--bs-amber) !important; }
+.border-amber-light { border-color: var(--bs-amber-light) !important; }
+.border-amber-dark { border-color: var(--bs-amber-dark) !important; }
+.border-pink { border-color: var(--bs-pink) !important; }
+.border-pink-light { border-color: var(--bs-pink-light) !important; }
+.border-pink-dark { border-color: var(--bs-pink-dark) !important; }
+.border-indigo { border-color: var(--bs-indigo) !important; }
+.border-indigo-light { border-color: var(--bs-indigo-light) !important; }
+.border-indigo-dark { border-color: var(--bs-indigo-dark) !important; }
+.border-magenta { border-color: var(--bs-magenta) !important; }
+.border-magenta-light { border-color: var(--bs-magenta-light) !important; }
+.border-magenta-dark { border-color: var(--bs-magenta-dark) !important; }
+.border-lime { border-color: var(--bs-lime) !important; }
+.border-lime-light { border-color: var(--bs-lime-light) !important; }
+.border-lime-dark { border-color: var(--bs-lime-dark) !important; }
+.border-orange { border-color: var(--bs-orange) !important; }
+.border-orange-light { border-color: var(--bs-orange-light) !important; }
+.border-orange-dark { border-color: var(--bs-orange-dark) !important; }
+.border-red-dark { border-color: var(--bs-red-dark) !important; }
+
+/* ========================================
+   MEJORAS ADICIONALES PARA COMPONENTES
+   ======================================== */
+
+/* Links con colores personalizados */
+.link-primary { color: var(--bs-primary) !important; }
+.link-primary:hover { color: var(--bs-indigo-light) !important; }
+
+/* Alerts con fondos sutiles mejorados */
+.alert-primary { background-color: var(--bs-primary-bg-subtle); border-color: var(--bs-primary-border-subtle); color: var(--bs-primary-text-emphasis); }
+.alert-success { background-color: var(--bs-success-bg-subtle); border-color: var(--bs-success-border-subtle); color: var(--bs-success-text-emphasis); }
+.alert-warning { background-color: var(--bs-warning-bg-subtle); border-color: var(--bs-warning-border-subtle); color: var(--bs-warning-text-emphasis); }
+.alert-danger { background-color: var(--bs-danger-bg-subtle); border-color: var(--bs-danger-border-subtle); color: var(--bs-danger-text-emphasis); }
+.alert-info { background-color: var(--bs-info-bg-subtle); border-color: var(--bs-info-border-subtle); color: var(--bs-info-text-emphasis); }
+
+/* ========================================
+   BOTONES PERSONALIZADOS - ESTILO 3D SUTIL
+   ======================================== */
+
+/* Estilo base para todos los botones */
+.btn {
+  align-items: center;
+  appearance: none;
+  border-radius: 6px;
+  border-width: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* PRIMARY BUTTON - Índigo oscuro */
+.btn-primary {
+  background-color: var(--bs-primary);
+  color: white;
+  box-shadow:
+    rgba(48, 51, 107, 0.15) 0 2px 4px,
+    rgba(48, 51, 107, 0.1) 0 5px 10px -2px,
+    rgba(30, 31, 58, 0.3) 0 -2px 0 inset;
+}
+
+.btn-primary:focus {
+  box-shadow:
+    rgba(30, 31, 58, 0.4) 0 0 0 1.5px inset,
+    rgba(48, 51, 107, 0.25) 0 2px 4px,
+    rgba(48, 51, 107, 0.2) 0 5px 10px -2px,
+    rgba(30, 31, 58, 0.3) 0 -2px 0 inset;
+}
+
+.btn-primary:hover {
+  background-color: var(--bs-primary);
+  box-shadow:
+    rgba(48, 51, 107, 0.2) 0 3px 6px,
+    rgba(48, 51, 107, 0.15) 0 5px 10px -2px,
+    rgba(30, 31, 58, 0.3) 0 -2px 0 inset;
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  background-color: var(--bs-primary) !important;
+  color: white !important;
+  box-shadow: rgba(30, 31, 58, 0.4) 0 2px 5px inset;
+  transform: translateY(1px);
+}
+
+/* SECONDARY BUTTON - Gris */
+.btn-secondary {
+  background-color: var(--bs-light);
+  color: var(--bs-secondary);
+  box-shadow:
+    rgba(73, 80, 87, 0.1) 0 2px 4px,
+    rgba(73, 80, 87, 0.08) 0 5px 10px -2px,
+    rgba(222, 226, 230, 0.4) 0 -2px 0 inset;
+}
+
+.btn-secondary:focus {
+  box-shadow:
+    rgba(73, 80, 87, 0.3) 0 0 0 1.5px inset,
+    rgba(73, 80, 87, 0.2) 0 2px 4px,
+    rgba(73, 80, 87, 0.15) 0 5px 10px -2px,
+    rgba(222, 226, 230, 0.4) 0 -2px 0 inset;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bs-light);
+  color: var(--bs-secondary);
+  box-shadow:
+    rgba(73, 80, 87, 0.15) 0 3px 6px,
+    rgba(73, 80, 87, 0.1) 0 5px 10px -2px,
+    rgba(222, 226, 230, 0.4) 0 -2px 0 inset;
+  transform: translateY(-1px);
+}
+
+.btn-secondary:active {
+  background-color: var(--bs-light) !important;
+  color: var(--bs-secondary) !important;
+  box-shadow: rgba(222, 226, 230, 0.5) 0 2px 5px inset;
+  transform: translateY(1px);
+}
+
+/* SUCCESS BUTTON - Verde Teal */
+.btn-success {
+  background-color: var(--bs-success);
+  color: white;
+  box-shadow:
+    rgba(0, 109, 104, 0.15) 0 2px 4px,
+    rgba(0, 109, 104, 0.1) 0 5px 10px -2px,
+    rgba(0, 70, 66, 0.3) 0 -2px 0 inset;
+}
+
+.btn-success:focus {
+  box-shadow:
+    rgba(0, 70, 66, 0.4) 0 0 0 1.5px inset,
+    rgba(0, 109, 104, 0.25) 0 2px 4px,
+    rgba(0, 109, 104, 0.2) 0 5px 10px -2px,
+    rgba(0, 70, 66, 0.3) 0 -2px 0 inset;
+}
+
+.btn-success:hover {
+  background-color: var(--bs-success);
+  box-shadow:
+    rgba(0, 109, 104, 0.2) 0 3px 6px,
+    rgba(0, 109, 104, 0.15) 0 5px 10px -2px,
+    rgba(0, 70, 66, 0.3) 0 -2px 0 inset;
+  transform: translateY(-1px);
+}
+
+.btn-success:active {
+  background-color: var(--bs-success) !important;
+  color: white !important;
+  box-shadow: rgba(0, 70, 66, 0.4) 0 2px 5px inset;
+  transform: translateY(1px);
+}
+
+/* WARNING BUTTON - Amarillo oscuro */
+.btn-warning {
+  background-color: var(--bs-warning);
+  color: white;
+  box-shadow:
+    rgba(184, 134, 11, 0.15) 0 2px 4px,
+    rgba(184, 134, 11, 0.1) 0 5px 10px -2px,
+    rgba(122, 87, 7, 0.3) 0 -2px 0 inset;
+}
+
+.btn-warning:focus {
+  box-shadow:
+    rgba(122, 87, 7, 0.4) 0 0 0 1.5px inset,
+    rgba(184, 134, 11, 0.25) 0 2px 4px,
+    rgba(184, 134, 11, 0.2) 0 5px 10px -2px,
+    rgba(122, 87, 7, 0.3) 0 -2px 0 inset;
+}
+
+.btn-warning:hover {
+  background-color: var(--bs-warning);
+  box-shadow:
+    rgba(184, 134, 11, 0.2) 0 3px 6px,
+    rgba(184, 134, 11, 0.15) 0 5px 10px -2px,
+    rgba(122, 87, 7, 0.3) 0 -2px 0 inset;
+  transform: translateY(-1px);
+}
+
+.btn-warning:active {
+  background-color: var(--bs-warning) !important;
+  color: white !important;
+  box-shadow: rgba(122, 87, 7, 0.4) 0 2px 5px inset;
+  transform: translateY(1px);
+}
+
+/* DANGER BUTTON - Rojo oscuro */
+.btn-danger {
+  background-color: var(--bs-danger);
+  color: white;
+  box-shadow:
+    rgba(153, 0, 0, 0.15) 0 2px 4px,
+    rgba(153, 0, 0, 0.1) 0 5px 10px -2px,
+    rgba(102, 0, 0, 0.3) 0 -2px 0 inset;
+}
+
+.btn-danger:focus {
+  box-shadow:
+    rgba(102, 0, 0, 0.4) 0 0 0 1.5px inset,
+    rgba(153, 0, 0, 0.25) 0 2px 4px,
+    rgba(153, 0, 0, 0.2) 0 5px 10px -2px,
+    rgba(102, 0, 0, 0.3) 0 -2px 0 inset;
+}
+
+.btn-danger:hover {
+  background-color: var(--bs-danger);
+  box-shadow:
+    rgba(153, 0, 0, 0.2) 0 3px 6px,
+    rgba(153, 0, 0, 0.15) 0 5px 10px -2px,
+    rgba(102, 0, 0, 0.3) 0 -2px 0 inset;
+  transform: translateY(-1px);
+}
+
+.btn-danger:active {
+  background-color: var(--bs-danger) !important;
+  color: white !important;
+  box-shadow: rgba(102, 0, 0, 0.4) 0 2px 5px inset;
+  transform: translateY(1px);
+}
+
+/* INFO BUTTON - Púrpura oscuro */
+.btn-info {
+  background-color: var(--bs-info);
+  color: white;
+  box-shadow:
+    rgba(93, 63, 211, 0.15) 0 2px 4px,
+    rgba(93, 63, 211, 0.1) 0 5px 10px -2px,
+    rgba(58, 39, 133, 0.3) 0 -2px 0 inset;
+}
+
+.btn-info:focus {
+  box-shadow:
+    rgba(58, 39, 133, 0.4) 0 0 0 1.5px inset,
+    rgba(93, 63, 211, 0.25) 0 2px 4px,
+    rgba(93, 63, 211, 0.2) 0 5px 10px -2px,
+    rgba(58, 39, 133, 0.3) 0 -2px 0 inset;
+}
+
+.btn-info:hover {
+  background-color: var(--bs-info);
+  color: white;
+  box-shadow:
+    rgba(93, 63, 211, 0.2) 0 3px 6px,
+    rgba(93, 63, 211, 0.15) 0 5px 10px -2px,
+    rgba(58, 39, 133, 0.3) 0 -2px 0 inset;
+  transform: translateY(-1px);
+}
+
+.btn-info:active {
+  background-color: var(--bs-info) !important;
+  color: white !important;
+  box-shadow: rgba(58, 39, 133, 0.4) 0 2px 5px inset;
+  transform: translateY(1px);
+}
+
+/* LIGHT BUTTON */
+.btn-light {
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
+  box-shadow:
+    rgba(73, 80, 87, 0.08) 0 2px 4px,
+    rgba(73, 80, 87, 0.05) 0 5px 10px -2px,
+    rgba(233, 236, 239, 0.5) 0 -2px 0 inset;
+}
+
+.btn-light:focus {
+  box-shadow:
+    rgba(73, 80, 87, 0.2) 0 0 0 1.5px inset,
+    rgba(73, 80, 87, 0.15) 0 2px 4px,
+    rgba(73, 80, 87, 0.1) 0 5px 10px -2px,
+    rgba(233, 236, 239, 0.5) 0 -2px 0 inset;
+}
+
+.btn-light:hover {
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
+  box-shadow:
+    rgba(73, 80, 87, 0.1) 0 3px 6px,
+    rgba(73, 80, 87, 0.08) 0 5px 10px -2px,
+    rgba(233, 236, 239, 0.5) 0 -2px 0 inset;
+  transform: translateY(-1px);
+}
+
+.btn-light:active {
+  background-color: var(--bs-light) !important;
+  color: var(--bs-dark) !important;
+  box-shadow: rgba(233, 236, 239, 0.6) 0 2px 5px inset;
+  transform: translateY(1px);
+}
+
+/* DARK BUTTON */
+.btn-dark {
+  background-color: var(--bs-dark);
+  color: white;
+  box-shadow:
+    rgba(33, 37, 41, 0.2) 0 2px 4px,
+    rgba(33, 37, 41, 0.15) 0 5px 10px -2px,
+    rgba(52, 58, 64, 0.3) 0 -2px 0 inset;
+}
+
+.btn-dark:focus {
+  box-shadow:
+    rgba(52, 58, 64, 0.4) 0 0 0 1.5px inset,
+    rgba(33, 37, 41, 0.3) 0 2px 4px,
+    rgba(33, 37, 41, 0.25) 0 5px 10px -2px,
+    rgba(52, 58, 64, 0.3) 0 -2px 0 inset;
+}
+
+.btn-dark:hover {
+  background-color: var(--bs-dark);
+  box-shadow:
+    rgba(33, 37, 41, 0.25) 0 3px 6px,
+    rgba(33, 37, 41, 0.2) 0 5px 10px -2px,
+    rgba(52, 58, 64, 0.3) 0 -2px 0 inset;
+  transform: translateY(-1px);
+}
+
+.btn-dark:active {
+  background-color: var(--bs-dark) !important;
+  color: white !important;
+  box-shadow: rgba(52, 58, 64, 0.4) 0 2px 5px inset;
+  transform: translateY(1px);
+}
+
+/* ========================================
+   BOTONES OUTLINE PERSONALIZADOS
+   ======================================== */
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: var(--bs-primary);
+  border: 2px solid var(--bs-primary);
+  box-shadow:
+    rgba(48, 51, 107, 0.1) 0 2px 4px,
+    rgba(48, 51, 107, 0.05) 0 5px 10px -2px;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--bs-primary);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow:
+    rgba(48, 51, 107, 0.2) 0 3px 6px,
+    rgba(48, 51, 107, 0.15) 0 5px 10px -2px,
+    rgba(30, 31, 58, 0.3) 0 -2px 0 inset;
+}
+
+.btn-outline-primary:active {
+  background-color: var(--bs-primary) !important;
+  color: white !important;
+  box-shadow: rgba(30, 31, 58, 0.4) 0 2px 5px inset;
+  transform: translateY(1px);
+}
+
+.btn-outline-success {
+  background-color: transparent;
+  color: var(--bs-success);
+  border: 2px solid var(--bs-success);
+  box-shadow:
+    rgba(0, 109, 104, 0.1) 0 2px 4px,
+    rgba(0, 109, 104, 0.05) 0 5px 10px -2px;
+}
+
+.btn-outline-success:hover {
+  background-color: var(--bs-success);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow:
+    rgba(0, 109, 104, 0.2) 0 3px 6px,
+    rgba(0, 109, 104, 0.15) 0 5px 10px -2px,
+    rgba(0, 70, 66, 0.3) 0 -2px 0 inset;
+}
+
+.btn-outline-success:active {
+  background-color: var(--bs-success) !important;
+  color: white !important;
+  box-shadow: rgba(0, 70, 66, 0.4) 0 2px 5px inset;
+  transform: translateY(1px);
+}
+
+.btn-outline-danger {
+  background-color: transparent;
+  color: var(--bs-danger);
+  border: 2px solid var(--bs-danger);
+  box-shadow:
+    rgba(153, 0, 0, 0.1) 0 2px 4px,
+    rgba(153, 0, 0, 0.05) 0 5px 10px -2px;
+}
+
+.btn-outline-danger:hover {
+  background-color: var(--bs-danger);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow:
+    rgba(153, 0, 0, 0.2) 0 3px 6px,
+    rgba(153, 0, 0, 0.15) 0 5px 10px -2px,
+    rgba(102, 0, 0, 0.3) 0 -2px 0 inset;
+}
+
+.btn-outline-danger:active {
+  background-color: var(--bs-danger) !important;
+  color: white !important;
+  box-shadow: rgba(102, 0, 0, 0.4) 0 2px 5px inset;
+  transform: translateY(1px);
+}
+
+/* ========================================
+   TAMAÑOS DE BOTONES PERSONALIZADOS
+   ======================================== */
+
+.btn-sm {
+  height: 36px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 16px;
+}
+
+.btn-lg {
+  height: 56px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 20px;
+}
+
+/* ========================================
+   BOTONES EXTRAS CON COLORES PERSONALIZADOS
+   ======================================== */
+
+.btn-magenta {
+  background-color: var(--bs-magenta);
+  color: white;
+  box-shadow:
+    rgba(236, 0, 140, 0.15) 0 2px 4px,
+    rgba(236, 0, 140, 0.1) 0 5px 10px -2px,
+    rgba(180, 0, 107, 0.3) 0 -2px 0 inset;
+}
+
+.btn-magenta:hover {
+  background-color: var(--bs-magenta);
+  color: white;
+  box-shadow:
+    rgba(236, 0, 140, 0.2) 0 3px 6px,
+    rgba(236, 0, 140, 0.15) 0 5px 10px -2px,
+    rgba(180, 0, 107, 0.3) 0 -2px 0 inset;
+  transform: translateY(-1px);
+}
+
+.btn-magenta:active {
+  background-color: var(--bs-magenta) !important;
+  color: white !important;
+  box-shadow: rgba(180, 0, 107, 0.4) 0 2px 5px inset;
+  transform: translateY(1px);
+}
+
+.btn-lime {
+  background-color: var(--bs-lime);
+  color: white;
+  box-shadow:
+    rgba(102, 204, 0, 0.15) 0 2px 4px,
+    rgba(102, 204, 0, 0.1) 0 5px 10px -2px,
+    rgba(76, 153, 0, 0.3) 0 -2px 0 inset;
+}
+
+.btn-lime:hover {
+  background-color: var(--bs-lime);
+  color: white;
+  box-shadow:
+    rgba(102, 204, 0, 0.2) 0 3px 6px,
+    rgba(102, 204, 0, 0.15) 0 5px 10px -2px,
+    rgba(76, 153, 0, 0.3) 0 -2px 0 inset;
+  transform: translateY(-1px);
+}
+
+.btn-lime:active {
+  background-color: var(--bs-lime) !important;
+  color: white !important;
+  box-shadow: rgba(76, 153, 0, 0.4) 0 2px 5px inset;
+  transform: translateY(1px);
+}
+
+/* Estado disabled para todos los botones */
+.btn:disabled,
+.btn.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px !important;
+}
