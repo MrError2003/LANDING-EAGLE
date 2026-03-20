@@ -1,6 +1,6 @@
 <section id="contacto" class="footer-contact">
     <div class="container-fluid px-3 px-md-5">
-        
+
         <!-- Encabezado -->
         <div class="footer-header text-center mb-5">
             <span class="badge bg-orange text-white px-4 py-2 mb-3" style="font-size: 1rem; border-radius: 50px;">
@@ -11,24 +11,24 @@
         </div>
 
         <div class="row g-4 align-items-stretch">
-            
+
             <!-- Columna izquierda: Info de contacto + redes -->
             <div class="col-lg-5">
                 <div class="welcome-glass p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
-                    
+
                     <div>
                         <h4 class="fw-bold text-white mb-4" style="font-size: 1.6rem;">
                             <i class="fas fa-headset text-warning me-2"></i>Información de contacto
                         </h4>
 
-                        <!-- Teléfono -->
+                        <!-- WhatsApp -->
                         <div class="contact-info-item d-flex align-items-start mb-4">
                             <div class="contact-icon-box me-3">
-                                <i class="fas fa-mobile-alt"></i>
+                                <i class="fab fa-whatsapp"></i>
                             </div>
                             <div>
-                                <span class="text-white-50 d-block" style="font-size: 0.9rem;">Teléfono móvil</span>
-                                <a href="tel:+573116825000" class="text-white text-decoration-none fw-semibold" style="font-size: 1.15rem;">
+                                <span class="text-white-50 d-block" style="font-size: 0.9rem;">WhatsApp</span>
+                                <a href="https://wa.me/573116825000" class="text-white text-decoration-none fw-semibold" target="_blank" style="font-size: 1.15rem;">
                                     +57 311 682 5000
                                 </a>
                             </div>
@@ -80,6 +80,11 @@
                                     <i class="fab fa-linkedin-in"></i>
                                 </div>
                             </a>
+                            <a href="https://www.tiktok.com/@eaglesoftware" class="social-icon-link" aria-label="TikTok" target="_blank">
+                                <div class="social-icon-box">
+                                    <i class="fab fa-tiktok"></i>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
@@ -93,27 +98,27 @@
                         <i class="fas fa-paper-plane text-warning me-2"></i>Envíanos un mensaje
                     </h4>
 
-                    <form id="contactForm" novalidate>
+                    <form id="form" novalidate>
                         <div class="row g-3">
                             <!-- Nombre -->
                             <div class="col-md-6">
                                 <label class="form-label text-white-50" style="font-size: 0.95rem;">Nombre completo</label>
-                                <input type="text" class="form-control footer-input" placeholder="Tu nombre" required>
+                                <input type="text" class="form-control footer-input" placeholder="Tu nombre" name="full_name" required>
                             </div>
                             <!-- Email -->
                             <div class="col-md-6">
                                 <label class="form-label text-white-50" style="font-size: 0.95rem;">Correo electrónico</label>
-                                <input type="email" class="form-control footer-input" placeholder="correo@ejemplo.com" required>
+                                <input type="email" class="form-control footer-input" placeholder="correo@ejemplo.com" name="email" required>
                             </div>
                             <!-- Teléfono -->
                             <div class="col-md-6">
                                 <label class="form-label text-white-50" style="font-size: 0.95rem;">Teléfono</label>
-                                <input type="tel" class="form-control footer-input" placeholder="+57 300 000 0000">
+                                <input type="tel" class="form-control footer-input" placeholder="+57 300 000 0000" name="phone" required>
                             </div>
                             <!-- Asunto -->
                             <div class="col-md-6">
                                 <label class="form-label text-white-50" style="font-size: 0.95rem;">Asunto</label>
-                                <select class="form-select footer-input" required>
+                                <select class="form-select footer-input" name="subject" required>
                                     <option value="" selected disabled>Selecciona una opción</option>
                                     <option value="parqueaderos">Plataforma Parqueaderos</option>
                                     <option value="inmobiliarias">Plataforma Inmobiliarias</option>
@@ -126,13 +131,16 @@
                             <!-- Mensaje -->
                             <div class="col-12">
                                 <label class="form-label text-white-50" style="font-size: 0.95rem;">Mensaje</label>
-                                <textarea class="form-control footer-input" rows="4" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+                                <textarea class="form-control footer-input" rows="4" placeholder="Cuéntanos sobre tu proyecto..." name="message" required></textarea>
                             </div>
                             <!-- Botón -->
                             <div class="col-12 mt-2">
-                                <button type="submit" class="btn btn-info btn-lg w-100 fw-bold" style="font-size: 1.15rem; padding: 14px;">
+                                <!-- <button type="submit" id="button" class="btn bg-orange-dark btn-lg w-100 fw-bold" style="font-size: 1.15rem; padding: 14px;">
                                     <i class="fas fa-paper-plane me-2"></i>Enviar mensaje
-                                </button>
+                                </button> -->
+
+                                <input type="submit" id="button" value="Enviar mensaje" class="btn bg-orange-dark btn-lg w-100 fw-bold" style="font-size: 1.15rem; padding: 14px;">
+
                             </div>
                         </div>
                     </form>
@@ -151,3 +159,55 @@
 
     </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+    emailjs.init('vqMJawKvtp94pyo-r')
+</script>
+
+<script>
+    const btn = document.getElementById('button');
+
+    document.getElementById('form')
+        .addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            btn.value = 'Enviando...';
+
+            const serviceID = 'default_service';
+            const templateID = 'template_fzip2lk';
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    btn.value = 'Enviar mensaje';
+                    document.getElementById('form').reset();
+
+                    // Confetti burst
+                    confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } });
+                    setTimeout(() => confetti({ particleCount: 80, spread: 100, origin: { y: 0.5 } }), 250);
+
+                    Swal.fire({
+                        icon: 'success',
+                        title: '¡Mensaje enviado!',
+                        text: 'Nos pondremos en contacto contigo pronto.',
+                        confirmButtonColor: '#ff8917',
+                        background: '#130d6b',
+                        color: '#ffffff',
+                        iconColor: '#ff8917'
+                    });
+                }, (err) => {
+                    btn.value = 'Enviar mensaje';
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error al enviar',
+                        text: 'Intenta nuevamente más tarde.',
+                        confirmButtonColor: '#ff8917',
+                        background: '#130d6b',
+                        color: '#ffffff'
+                    });
+                });
+        });
+</script>

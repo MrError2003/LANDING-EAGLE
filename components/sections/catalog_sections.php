@@ -134,7 +134,7 @@
             <p class="catalog-cta-text">
                 ¿Tu industria no está aquí? Desarrollamos soluciones a la medida para cualquier sector.
             </p>
-            <a href="#" class="btn btn-info btn-lg">
+            <a href="#contacto" class="btn btn-info btn-lg">
                 <i class="fas fa-envelope me-2"></i>Contáctanos
             </a>
         </div>

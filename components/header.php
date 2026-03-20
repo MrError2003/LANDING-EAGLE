@@ -15,8 +15,8 @@
             <i class="fas fa-bars text-white"></i>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-center" id="navbarEagle">
-            <ul class="navbar-nav gap-2 mt-3 mt-lg-0">
+        <div class="collapse navbar-collapse" id="navbarEagle">
+            <ul class="navbar-nav mx-auto gap-2 mt-3 mt-lg-0">
                 <li class="nav-item">
                     <a class="btn btn-outline-light btn-sm nav-scroll-btn" href="#section-welcome">Inicio</a>
                 </li>
@@ -33,6 +33,12 @@
                     <a class="btn btn-outline-light btn-sm nav-scroll-btn" href="#contacto">Contacto</a>
                 </li>
             </ul>
+            <div class="d-flex gap-2 ms-lg-3 mt-3 mt-lg-0">
+                <a href="https://www.facebook.com/eaglesoftwares/" target="_blank" class="nav-social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/eaglesoftwares/" target="_blank" class="nav-social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/agencia-de-desarrollo-eagle-software/" target="_blank" class="nav-social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.tiktok.com/@eaglesoftware" target="_blank" class="nav-social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
         </div>
     </div>
 </nav>

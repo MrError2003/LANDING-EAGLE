@@ -24,7 +24,7 @@
         <div class="tl-container">
             <div class="tl-line" aria-hidden="true"></div>
 
-            <!-- Paso 1 -->
+            <!-- Paso 1: card izquierda, imagen derecha -->
             <div class="tl-item tl-left" data-step="01">
                 <div class="tl-dot"><span>1</span></div>
                 <div class="tl-content">
@@ -41,11 +41,17 @@
                         <span>Propuesta técnica</span>
                     </div>
                 </div>
+                <div class="tl-image">
+                    <img src="https://images.pexels.com/photos/3182763/pexels-photo-3182763.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Consultoría de equipo">
+                </div>
             </div>
 
-            <!-- Paso 2 -->
+            <!-- Paso 2: card derecha, imagen izquierda -->
             <div class="tl-item tl-right" data-step="02">
                 <div class="tl-dot"><span>2</span></div>
+                <div class="tl-image">
+                    <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Diseño y arquitectura">
+                </div>
                 <div class="tl-content">
                     <span class="tl-label">Planificación</span>
                     <h3 class="tl-title">Diseño y Arquitectura</h3>
@@ -62,7 +68,7 @@
                 </div>
             </div>
 
-            <!-- Paso 3 -->
+            <!-- Paso 3: card izquierda, imagen derecha -->
             <div class="tl-item tl-left" data-step="03">
                 <div class="tl-dot"><span>3</span></div>
                 <div class="tl-content">
@@ -79,11 +85,17 @@
                         <span>Integraciones API</span>
                     </div>
                 </div>
+                <div class="tl-image">
+                    <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Desarrollo de código">
+                </div>
             </div>
 
-            <!-- Paso 4 -->
+            <!-- Paso 4: card derecha, imagen izquierda -->
             <div class="tl-item tl-right" data-step="04">
                 <div class="tl-dot"><span>4</span></div>
+                <div class="tl-image">
+                    <img src="https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Control de calidad">
+                </div>
                 <div class="tl-content">
                     <span class="tl-label">Validación</span>
                     <h3 class="tl-title">Pruebas y Control de Calidad</h3>
@@ -100,7 +112,7 @@
                 </div>
             </div>
 
-            <!-- Paso 5 -->
+            <!-- Paso 5: card izquierda, imagen derecha -->
             <div class="tl-item tl-left" data-step="05">
                 <div class="tl-dot"><span>5</span></div>
                 <div class="tl-content">
@@ -117,11 +129,17 @@
                         <span>Documentación</span>
                     </div>
                 </div>
+                <div class="tl-image">
+                    <img src="https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Despliegue en la nube">
+                </div>
             </div>
 
-            <!-- Paso 6 -->
+            <!-- Paso 6: card derecha, imagen izquierda -->
             <div class="tl-item tl-right" data-step="06">
                 <div class="tl-dot"><span>6</span></div>
+                <div class="tl-image">
+                    <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Soporte y equipo">
+                </div>
                 <div class="tl-content">
                     <span class="tl-label">Post-lanzamiento</span>
                     <h3 class="tl-title">Soporte y Mantenimiento</h3>

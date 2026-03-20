@@ -30,11 +30,11 @@
   --bs-success-border-subtle: #7fe8db;
   
   /* Info - Púrpura oscuro */
-  --bs-info: #5d3fd3;
-  --bs-info-rgb: 93, 63, 211;
-  --bs-info-text-emphasis: #3a2785;
-  --bs-info-bg-subtle: #e0c3fc;
-  --bs-info-border-subtle: #c89bf9;
+  --bs-info: #e67300;
+  --bs-info-rgb: 230, 115, 0;
+  --bs-info-text-emphasis: #e67300;
+  --bs-info-bg-subtle: #ffd8b2;
+  --bs-info-border-subtle: #ffd8b2;
   
   /* Warning - Amarillo oscuro */
   --bs-warning: #b8860b;
