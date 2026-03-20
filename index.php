@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LANDING EAGLE - Botones Personalizados</title>
+    <title>Eagle Software</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -23,6 +23,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logos/icono_eagle.png">
+    <link rel="shortcut icon" type="image/png" href="img/logos/icono_eagle.png">
+    <link rel="apple-touch-icon" href="img/logos/icono_eagle.png">
+
     <style>
         /* Fondo animado que ocupa toda la pantalla */
         #vanta-background {
