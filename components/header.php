@@ -18,39 +18,19 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarEagle">
             <ul class="navbar-nav gap-2 mt-3 mt-lg-0">
                 <li class="nav-item">
-                    <a class="btn btn-outline-light btn-sm nav-scroll-btn" href="#section-theme">
-                        <i class="fas fa-palette me-1"></i>Theme
-                    </a>
+                    <a class="btn btn-outline-light btn-sm nav-scroll-btn" href="#section-welcome">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-outline-light btn-sm nav-scroll-btn" href="#section-outline">
-                        <i class="far fa-square me-1"></i>Outline
-                    </a>
+                    <a class="btn btn-outline-light btn-sm nav-scroll-btn" href="#section-catalog">Soluciones</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-outline-light btn-sm nav-scroll-btn" href="#section-sizes">
-                        <i class="fas fa-expand-arrows-alt me-1"></i>Tamaños
-                    </a>
+                    <a class="btn btn-outline-light btn-sm nav-scroll-btn" href="#section-process">Proceso</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-outline-light btn-sm nav-scroll-btn" href="#section-custom">
-                        <i class="fas fa-rainbow me-1"></i>Custom
-                    </a>
+                    <a class="btn btn-outline-light btn-sm nav-scroll-btn" href="#section-clients">Clientes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-outline-light btn-sm nav-scroll-btn" href="#section-states">
-                        <i class="fas fa-toggle-on me-1"></i>Estados
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-outline-light btn-sm nav-scroll-btn" href="#section-combos">
-                        <i class="fas fa-magic me-1"></i>Combos
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-outline-light btn-sm nav-scroll-btn" href="#section-test">
-                        <i class="fas fa-flask me-1"></i>Pruebas
-                    </a>
+                    <a class="btn btn-outline-light btn-sm nav-scroll-btn" href="#contacto">Contacto</a>
                 </li>
             </ul>
         </div>

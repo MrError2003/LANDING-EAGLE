@@ -658,6 +658,182 @@
             .tl-title { font-size: 1.3rem; }
             .tl-desc { font-size: 1rem; }
         }
+
+        /* ===== CARRUSEL DE LOGOS ===== */
+        .logo-carousel-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0;
+        }
+
+        .logo-carousel-track-container {
+            overflow: hidden;
+            flex: 1;
+            mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+            -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+        }
+
+        .logo-carousel-track {
+            display: flex;
+            align-items: center;
+            gap: 0;
+            will-change: transform;
+            animation: logoScroll 40s linear infinite;
+        }
+
+        .logo-carousel-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes logoScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-33.333%); }
+        }
+
+        .logo-carousel-item {
+            flex: 0 0 auto;
+            width: 280px;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.2rem 2rem;
+            margin: 0 0.75rem;
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 14px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px rgba(19, 13, 107, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .logo-carousel-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 137, 23, 0.35);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+            transform: scale(1.05);
+        }
+
+        .logo-carousel-item img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+            opacity: 0.75;
+            transition: all 0.3s ease;
+        }
+
+        .logo-carousel-item.no-filter img {
+            filter: none;
+            opacity: 0.9;
+        }
+
+        .logo-carousel-item:hover img {
+            filter: none;
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .logo-carousel-item {
+                width: 180px;
+                height: 110px;
+                padding: 0.8rem 1.2rem;
+            }
+        }
+
+        /* ===== Footer / Contacto ===== */
+        .footer-contact {
+            padding: 5rem 0 2rem;
+            position: relative;
+        }
+
+        .contact-icon-box {
+            width: 48px;
+            height: 48px;
+            min-width: 48px;
+            border-radius: 12px;
+            background: rgba(255, 137, 23, 0.15);
+            border: 1px solid rgba(255, 137, 23, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #ff8917;
+        }
+
+        .contact-info-item:hover .contact-icon-box {
+            background: rgba(255, 137, 23, 0.25);
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
+
+        .social-icon-link {
+            text-decoration: none;
+        }
+
+        .social-icon-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon-box:hover {
+            background: rgba(255, 137, 23, 0.25);
+            border-color: rgba(255, 137, 23, 0.5);
+            color: #ff8917;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 137, 23, 0.25);
+        }
+
+        .footer-input,
+        .footer-input:focus {
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            border-radius: 10px;
+            padding: 12px 16px;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
+        }
+
+        .footer-input::placeholder {
+            color: rgba(255, 255, 255, 0.35);
+        }
+
+        .footer-input:focus {
+            border-color: rgba(255, 137, 23, 0.5);
+            box-shadow: 0 0 0 3px rgba(255, 137, 23, 0.15);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-input option {
+            background: #130d6b;
+            color: #ffffff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .footer-contact {
+                padding: 3rem 0 1.5rem;
+            }
+            .footer-header h2 {
+                font-size: 2rem !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -681,17 +857,17 @@
         <?php include 'components/sections/process_timeline.php'; ?>
     </div>
 
-    <div class="container my-5">
-
-        <?php include 'components/button.php'; ?>
-        
-        <footer class="text-center mt-5 pt-4 border-top">
-            <p class="text-muted">
-                <i class="fas fa-code me-2"></i>
-                Desarrollado con Bootstrap 5 + Paleta personalizada EAGLE
-            </p>
-        </footer>
+    <!-- Carrusel de Clientes -->
+    <div class="container-fluid px-3 px-md-5 mb-5">
+        <?php include 'components/sections/logos_carousel.php'; ?>
     </div>
+
+    <div class="container my-5">
+        <?php //include 'components/button.php'; ?>
+    </div>
+
+    <!-- Footer / Contacto -->
+    <?php include 'components/sections/footer_contact.php'; ?>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -740,6 +916,70 @@
         document.querySelectorAll('.tl-item').forEach(item => {
             tlObserver.observe(item);
         });
+
+        // Logo carousel: scroll con rueda del mouse (loop infinito)
+        (function() {
+            const container = document.querySelector('.logo-carousel-track-container');
+            const track = document.querySelector('.logo-carousel-track');
+            if (!track || !container) return;
+
+            // Calcular ancho de un set de logos (1/3 del track total)
+            const setWidth = track.scrollWidth / 3;
+
+            // Loop infinito: reposicionar cuando se pase de límites
+            function wrapPosition(x) {
+                // Mantener x entre 0 y -setWidth
+                let wrapped = x % setWidth;
+                if (wrapped > 0) wrapped -= setWidth;
+                return wrapped;
+            }
+
+            container.addEventListener('wheel', function(e) {
+                e.preventDefault();
+                const style = window.getComputedStyle(track);
+                const matrix = new DOMMatrix(style.transform);
+                let currentX = matrix.m41;
+                const delta = e.deltaY !== 0 ? e.deltaY : e.deltaX;
+
+                let newX = wrapPosition(currentX - delta);
+
+                track.style.animation = 'none';
+                track.style.transform = 'translateX(' + newX + 'px)';
+
+                clearTimeout(track._scrollTimer);
+                track._scrollTimer = setTimeout(() => {
+                    track.style.transform = '';
+                    track.style.animation = '';
+                }, 1500);
+            }, { passive: false });
+        })();
+
+        // Scroll Spy: destacar botón de navegación según sección visible
+        (function() {
+            const sections = document.querySelectorAll('section[id], #section-welcome');
+            const navLinks = document.querySelectorAll('.nav-scroll-btn');
+            if (!sections.length || !navLinks.length) return;
+
+            function updateActive() {
+                let current = '';
+                const offset = 150;
+                sections.forEach(section => {
+                    const top = section.offsetTop - offset;
+                    if (window.scrollY >= top) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', updateActive, { passive: true });
+            updateActive();
+        })();
     </script>
 
 </body>
