@@ -13,6 +13,7 @@ $logos = [
     ['src' => 'img/carrusel/logo_pbj.png',         'alt' => 'PBJ'],
     ['src' => 'img/carrusel/logo_poliandino.png',  'alt' => 'Poliandino'],
     ['src' => 'img/carrusel/logo_utt.png',         'alt' => 'UTT'],
+    ['src' => 'img/carrusel/logo_ceri.png',        'alt' => 'CERI fundación'],
 ];
 ?>
 
